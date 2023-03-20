@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Strona C</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<form action="/strona.php" method="post">
+			<div id="genderform">
+				<label for="m">Mężczyzna</label>
+				<input type="radio" id="m" name="gender" value="M">
+ 				<label for="f">Kobieta</label>
+				<input type="radio" id="f" name="gender" value="F">
+  				<label for="o">Inna</label>
+				<input type="radio" id="o" name="gender" value="O">
+			</div>
+			<div class="row">
+				<label for="fname">Imię:</label>
+				<input type="text" id="fname" name="fname">
+			</div>
+			<div class="row">
+				<label for="lname">Naziwsko:</label>
+				<input type="text" id="lname" name="lname">
+			</div>
+			<div class="row">
+				<label for="street">Ulica:</label>
+				<input type="text" id="street" name="street">			
+			</div>
+			<div class="row">
+				<label for="city">Miasto:</label>
+				<input type="text" id="city" name="city">			
+			</div>
+			<div class="row">
+				<label for="hnumber">Numer domu:</label>
+				<input type="number" id="hnumber" name="hnumber" min="1">			
+			</div>
+			<div class="row">
+				<label for="fnumber">Numer mieszkania:</label>
+				<input type="number" id="fnumber" name="fnumber" min="1">		
+			</div>
+			<div class="row">
+				<label for="dlicence">Prawo jazdy:</label>
+				<input type="checkbox" id="dlicence" name="dlicence" value="dlicence">		
+			</div>
+			<div class="row">
+				<label for="pnumber">Numer telefonu:</label>
+				<input type="tel" id="pnumber" name="pnumber" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">			
+			</div>
+			<div class="row">
+				<label for="bday">Data urodzenia:</label>
+				<input type="date" id="bday" name="bday">				
+			</div>
+			<div class="row">
+				<label for="pesel">Pesel:</label>
+				<input type="number" id="pesel" name="pesel" min="10000000000" max="99999999999">			
+			</div>
+			<div class="row">
+				<label for="pcode">Kod pocztowy:</label>
+				<input type="text" id="pcode" name="pcode" placeholder="00-000" pattern="[0-9]{2}-[0-9]{3}">		
+			</div>
+			<div class="row">
+				<label for="suggestions">Uwagi:</label>
+				<textarea id="suggestions" name="suggestions" rows="6" cols="50" maxlength="300"></textarea>			
+			</div>
+			<input type="submit" value="Wyślij">
+			<input type="reset" value="Wyczyść">
+		</form>
+		<a href="https://dolczi.github.io/bsi3/">Powrót</a>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+.row
+{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.row label
+{
+	flex-basis: 10%;
+	text-align: left;
+}
+#genderform
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
